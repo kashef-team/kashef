@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1809462A-AFA4-4895-A1D1-C8918A4E32E2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LiveNavigation.Common.Utilities</RootNamespace>
+    <AssemblyName>LiveNavigation.Common.Utilities</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Build\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>bin\Debug\BlueCloud.OneGate.ESSO.Common.Utilities.xml</DocumentationFile>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\Kashef.API\bin\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Storage">
+      <HintPath>..\packages\WindowsAzure.Storage.8.3.0\lib\net45\Microsoft.WindowsAzure.Storage.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Collections.Immutable, Version=1.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Collections.Immutable.1.3.0\lib\netstandard1.0\System.Collections.Immutable.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.DirectoryServices.AccountManagement" />
+    <Reference Include="System.IdentityModel" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Microsoft ASP.NET\ASP.NET MVC 4\Assemblies\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v2.0\Assemblies\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cache\CacheManager.cs" />
+    <Compile Include="CustomeException\LiveNavigationException.cs" />
+    <Compile Include="Diagnostics\Logger.cs" />
+    <Compile Include="EF\Configuration\AndSpecification.cs" />
+    <Compile Include="EF\Configuration\EFCommandInterceptor.cs" />
+    <Compile Include="EF\Configuration\CompositeSpecification.cs" />
+    <Compile Include="EF\Configuration\DirectSpecification.cs" />
+    <Compile Include="EF\Configuration\ExpressionBuilder.cs" />
+    <Compile Include="EF\Configuration\ISpecification.cs" />
+    <Compile Include="EF\Configuration\NotSpecification.cs" />
+    <Compile Include="EF\Configuration\OrSpecification.cs" />
+    <Compile Include="EF\Configuration\ParametersRebinder.cs" />
+    <Compile Include="EF\Configuration\Specification.cs" />
+    <Compile Include="EF\Configuration\TrueSpecification.cs" />
+    <Compile Include="EF\Extensions\QueryExtension.cs" />
+    <Compile Include="EF\Helpers\SQLNotificationWapper.cs" />
+    <Compile Include="General\Converters\DateTimeConverter.cs" />
+    <Compile Include="General\Strings\StringExtensions.cs" />
+    <Compile Include="Cache\CacheItem.cs" />
+    <Compile Include="Cache\CacheKey.cs" />
+    <Compile Include="Cache\ICacheManager.cs" />
+    <Compile Include="Cache\MemoryCacheManager.cs" />
+    <Compile Include="EF\Repository\ExtendedRepository.cs" />
+    <Compile Include="EF\Repository\ReadOnlyRepository.cs" />
+    <Compile Include="EF\Repository\Repository.cs" />
+    <Compile Include="Diagnostics\Trace\ITraceManager.cs" />
+    <Compile Include="Diagnostics\Trace\TraceManager.cs" />
+    <Compile Include="EF\Context\IContext.cs" />
+    <Compile Include="EF\Repository\IExtendedRepository.cs" />
+    <Compile Include="EF\Context\IQueryableContext.cs" />
+    <Compile Include="EF\UnitOfWork\IQueryableUnitOfWork.cs" />
+    <Compile Include="EF\Repository\IReadOnlyRepository.cs" />
+    <Compile Include="EF\Repository\IRepository.cs" />
+    <Compile Include="EF\UnitOfWork\IUnitOfWork.cs" />
+    <Compile Include="EF\Context\ISQL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Security\AES.cs" />
+    <Compile Include="Security\CertificateLoader.cs" />
+    <Compile Include="Security\Hashing.cs" />
+    <Compile Include="Security\ICryptography.cs" />
+    <Compile Include="Security\ICryptographyCertificateProvider.cs" />
+    <Compile Include="Security\TripleDES.cs" />
+    <Compile Include="Security\X509CertificateProvider.cs" />
+    <Compile Include="Serialization\ISerializerProvider.cs" />
+    <Compile Include="Serialization\JsonSerializer.cs" />
+    <Compile Include="ServiceModel\Consumer\WcfConsumerExtension.cs" />
+    <Compile Include="ServiceModel\Audit\WcfMessageLoggerExtension.cs" />
+    <Compile Include="TypeResolution\CachedTypeResolver.cs" />
+    <Compile Include="TypeResolution\ITypeAdapter.cs" />
+    <Compile Include="TypeResolution\ITypeMapConfigurationBase.cs" />
+    <Compile Include="TypeResolution\ITypeResolver.cs" />
+    <Compile Include="TypeResolution\RegisterTypesMap.cs" />
+    <Compile Include="TypeResolution\TypeAdapter.cs" />
+    <Compile Include="TypeResolution\TypeExtensions.cs" />
+    <Compile Include="TypeResolution\TypeMapConfiguration.cs" />
+    <Compile Include="TypeResolution\TypeMapConfigurationBase.cs" />
+    <Compile Include="Validation\EntityValidator.cs" />
+    <Compile Include="Validation\IEntityValidator.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ServiceModel\Audit\Schema.sql" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>REM "C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\Bin\signtool.exe" sign /v /ac "$(SolutionDir)BlueCloud Code Signing Certificate\BlueCloud EV.cer" /s MY /n "BlueCloud Technologies" /t http://timestamp.verisign.com/scripts/timstamp.dll "$(TargetDir)$(TargetFileName)"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

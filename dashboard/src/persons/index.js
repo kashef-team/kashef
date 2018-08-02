@@ -66,7 +66,13 @@ export const PersonEdit = (props) => (
                 { id: 'male', name: 'Male' },
                 { id: 'female', name: 'Female' },
             ]}/>
-            <BooleanInput label="is soldier?" source="isSoldier" />
+            <SelectInput source="type" choices={[
+                { id: 'pilgrim', name: 'Pilgrim' },
+                { id: 'police', name: 'Police' },
+                { id: 'blacklisted', name: 'Blacklisted' },
+            ]}/>
+            <BooleanInput label="Is Missing?" source="isMissing" />
+            <BooleanInput label="Is Captured?" source="found" />
         </SimpleForm>
     </Edit>
 );

@@ -6,6 +6,7 @@ import logo from './logo.svg';
 import './App.css';
 
 import { PersonList, PersonCreate, PersonEdit } from './persons';
+import { CameraList, CameraCreate, CameraEdit } from './cameras';
 
 const App = () => (
   <Admin
@@ -13,6 +14,7 @@ const App = () => (
     title="Kashef Dashboard"
   >
     <Resource name="person" list={PersonList} create={PersonCreate} edit={PersonEdit} />
+    <Resource name="camera" list={CameraList} create={CameraCreate} edit={CameraEdit} />
   </Admin>
 );
 

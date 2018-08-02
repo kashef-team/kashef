@@ -9,7 +9,7 @@ const validator = require('validator');
 
 const isUrlsArray = (value) => {
   for(let i=0; i<value.length; i+=1) {
-    if (!validator.isURL(value[i])) {
+    if (!validator.isURL(value[i].url)) {
       return false;
     }
   }
@@ -53,20 +53,21 @@ module.exports = {
       example: 'Egypt',
     },
 
+    type: {
+      type: 'string',
+      isIn: ['pilgrim', 'police', 'blacklisted'],
+      defaultsTo: 'pilgrim',
+    },
+
     isMissing: {
       type: 'boolean',
       defaultsTo: false,
     },
 
-    isWanted: {
+    found: {
       type: 'boolean',
       defaultsTo: false,
     },
-
-    isSoldier: {
-      type: 'boolean',
-      defaultsTo: false,
-    }
 
     //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
     //  ║╣ ║║║╠╩╗║╣  ║║╚═╗

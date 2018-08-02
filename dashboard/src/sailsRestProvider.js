@@ -90,6 +90,7 @@ export default (apiUrl, httpClient = fetchJson) => {
         default:
             throw new Error(`Unsupported fetch action type ${type}`);
         }
+        console.log('url: ', url, ' options: ', options);
         return { url, options };
     };
 

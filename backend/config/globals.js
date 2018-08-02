@@ -13,6 +13,16 @@ module.exports.globals = {
 
   /****************************************************************************
   *                                                                           *
+  * Whether to expose the locally-installed validator as a global variable    *
+  * (`validator`), making  it accessible throughout your app.                 *
+  * (See the link above for help.)                                            *
+  *                                                                           *
+  ****************************************************************************/
+
+  //validator: require('validator'),
+
+  /****************************************************************************
+  *                                                                           *
   * Whether to expose the locally-installed Lodash as a global variable       *
   * (`_`), making  it accessible throughout your app.                         *
   * (See the link above for help.)                                            *

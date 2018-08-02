@@ -13,6 +13,7 @@ import {
     Edit,
     EditButton,
     DisabledInput,
+    SelectInput,
  } from 'react-admin';
 
 export const PersonList = (props) => (
@@ -34,11 +35,15 @@ export const PersonCreate = (props) => (
                     <TextInput source="url" />
                 </SimpleFormIterator>
             </ArrayInput>
-            <SelectField source="gender" choices={[
+            <SelectInput source="gender" choices={[
                 { id: 'male', name: 'Male' },
                 { id: 'female', name: 'Female' },
-            ]} />
-            <BooleanInput label="is soldier?" source="isSoldier" />
+            ]}/>
+            <SelectInput source="type" choices={[
+                { id: 'pilgrim', name: 'Pilgrim' },
+                { id: 'police', name: 'Police' },
+                { id: 'blacklisted', name: 'Blacklisted' },
+            ]}/>
         </SimpleForm>
     </Create>
 );
@@ -57,10 +62,10 @@ export const PersonEdit = (props) => (
                     <TextInput source="url" />
                 </SimpleFormIterator>
             </ArrayInput>
-            <SelectField source="gender" choices={[
+            <SelectInput source="gender" choices={[
                 { id: 'male', name: 'Male' },
                 { id: 'female', name: 'Female' },
-            ]} />
+            ]}/>
             <BooleanInput label="is soldier?" source="isSoldier" />
         </SimpleForm>
     </Edit>

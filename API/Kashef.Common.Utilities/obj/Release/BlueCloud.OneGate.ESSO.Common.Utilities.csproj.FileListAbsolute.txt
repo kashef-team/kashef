@@ -1,9 +1,0 @@
-E:\ProductCollection\BlueCloud.OneGate\BlueCloud.OneGate.ESSO\BlueCloud.OneGate.ESSO.Common.Utilities\bin\Release\BlueCloud.OneGate.ESSO.Common.Utilities.dll
-E:\ProductCollection\BlueCloud.OneGate\BlueCloud.OneGate.ESSO\BlueCloud.OneGate.ESSO.Common.Utilities\bin\Release\BlueCloud.OneGate.ESSO.Common.Utilities.pdb
-E:\ProductCollection\BlueCloud.OneGate\BlueCloud.OneGate.ESSO\BlueCloud.OneGate.ESSO.Common.Utilities\bin\Release\EntityFramework.dll
-E:\ProductCollection\BlueCloud.OneGate\BlueCloud.OneGate.ESSO\BlueCloud.OneGate.ESSO.Common.Utilities\bin\Release\EntityFramework.xml
-E:\ProductCollection\BlueCloud.OneGate\BlueCloud.OneGate.ESSO\BlueCloud.OneGate.ESSO.Common.Utilities\obj\Release\BlueCloud.OneGate.ESSO.Common.Utilities.csprojResolveAssemblyReference.cache
-E:\ProductCollection\BlueCloud.OneGate\BlueCloud.OneGate.ESSO\BlueCloud.OneGate.ESSO.Common.Utilities\obj\Release\BlueCloud.OneGate.ESSO.Common.Utilities.Properties.Resources.resources
-E:\ProductCollection\BlueCloud.OneGate\BlueCloud.OneGate.ESSO\BlueCloud.OneGate.ESSO.Common.Utilities\obj\Release\BlueCloud.OneGate.ESSO.Common.Utilities.csproj.GenerateResource.Cache
-E:\ProductCollection\BlueCloud.OneGate\BlueCloud.OneGate.ESSO\BlueCloud.OneGate.ESSO.Common.Utilities\obj\Release\BlueCloud.OneGate.ESSO.Common.Utilities.dll
-E:\ProductCollection\BlueCloud.OneGate\BlueCloud.OneGate.ESSO\BlueCloud.OneGate.ESSO.Common.Utilities\obj\Release\BlueCloud.OneGate.ESSO.Common.Utilities.pdb

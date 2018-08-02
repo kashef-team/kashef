@@ -1,2 +1,0 @@
-C:\SourceCode\PromoCode\PromoCode.Common.Utilities\obj\Release\PromoCode.Common.Utilities.Properties.Resources.resources
-C:\SourceCode\PromoCode\PromoCode.Common.Utilities\obj\Release\PromoCode.Common.Utilities.csproj.GenerateResource.Cache

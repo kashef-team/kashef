@@ -1,9 +1,0 @@
-E:\ProductCollection\BlueCloud.OneGate\BlueCloud.OneGate.ESSO.Common.Utilities\obj\Debug\BlueCloud.OneGate.Common.Utilities.Properties.Resources.resources
-E:\ProductCollection\BlueCloud.OneGate\BlueCloud.OneGate.ESSO.Common.Utilities\obj\Debug\BlueCloud.OneGate.Common.Utilities.csproj.GenerateResource.Cache
-E:\ProductCollection\BlueCloud.OneGate\Build\BlueCloud.OneGate.Common.Utilities.dll
-E:\ProductCollection\BlueCloud.OneGate\Build\BlueCloud.OneGate.Common.Utilities.pdb
-E:\ProductCollection\BlueCloud.OneGate\BlueCloud.OneGate.Common.Utilities\obj\Debug\BlueCloud.OneGate.Common.Utilities.Properties.Resources.resources
-E:\ProductCollection\BlueCloud.OneGate\BlueCloud.OneGate.Common.Utilities\obj\Debug\BlueCloud.OneGate.Common.Utilities.csproj.GenerateResource.Cache
-E:\ProductCollection\BlueCloud.OneGate\BlueCloud.OneGate.Common.Utilities\obj\Debug\BlueCloud.OneGate.Common.Utilities.dll
-E:\ProductCollection\BlueCloud.OneGate\BlueCloud.OneGate.Common.Utilities\obj\Debug\BlueCloud.OneGate.Common.Utilities.pdb
-E:\ProductCollection\BlueCloud.OneGate\BlueCloud.OneGate.Common.Utilities\obj\Debug\BlueCloud.OneGate.Common.Utilities.csprojResolveAssemblyReference.cache

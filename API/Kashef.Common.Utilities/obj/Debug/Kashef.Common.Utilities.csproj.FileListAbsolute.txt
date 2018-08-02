@@ -1,7 +1,0 @@
-C:\Users\USER\Desktop\Kashef\Build\LiveNavigation.Common.Utilities.dll.config
-C:\Users\USER\Desktop\Kashef\Build\LiveNavigation.Common.Utilities.dll
-C:\Users\USER\Desktop\Kashef\Build\LiveNavigation.Common.Utilities.pdb
-C:\Users\USER\Desktop\Kashef\Kashef.Common.Utilities\obj\Debug\LiveNavigation.Common.Utilities.Properties.Resources.resources
-C:\Users\USER\Desktop\Kashef\Kashef.Common.Utilities\obj\Debug\Kashef.Common.Utilities.csproj.GenerateResource.Cache
-C:\Users\USER\Desktop\Kashef\Kashef.Common.Utilities\obj\Debug\LiveNavigation.Common.Utilities.dll
-C:\Users\USER\Desktop\Kashef\Kashef.Common.Utilities\obj\Debug\LiveNavigation.Common.Utilities.pdb

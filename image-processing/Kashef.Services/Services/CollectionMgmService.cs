@@ -1,5 +1,6 @@
 ﻿using Amazon.Rekognition;
 using Amazon.Rekognition.Model;
+using Amazon.Runtime;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,21 +21,29 @@ namespace Kashef.Services
 
         #region Functions
 
-        public void AddCollection(string collectionId)
+        public bool AddCollection(string collectionId)
         {
-            AmazonRekognitionClient rekognitionClient = new AmazonRekognitionClient();
-
-            CreateCollectionRequest createCollectionRequest = new CreateCollectionRequest()
+            try
             {
-                CollectionId = collectionId
-            };
+                AmazonRekognitionClient rekognitionClient = AmazonClient.GetInstance();
 
-            CreateCollectionResponse createCollectionResponse = rekognitionClient.CreateCollection(createCollectionRequest);
+                CreateCollectionRequest createCollectionRequest = new CreateCollectionRequest()
+                {
+                    CollectionId = collectionId
+                };
+
+                CreateCollectionResponse createCollectionResponse = rekognitionClient.CreateCollection(createCollectionRequest);
+                return true;
+            }
+            catch(Exception ex)
+            {
+                return false;
+            }
         }
 
         public List<string> GetAllFacesInCollection(string collectionId)
-        {
-            AmazonRekognitionClient rekognitionClient = new AmazonRekognitionClient();
+        { 
+            AmazonRekognitionClient rekognitionClient = AmazonClient.GetInstance();
 
             ListFacesResponse listFacesResponse = null;
 
@@ -68,7 +77,7 @@ namespace Kashef.Services
 
         public void RemoveFacesFromCollection(string collectionId, List<string> removedFaces)
         {
-            AmazonRekognitionClient rekognitionClient = new AmazonRekognitionClient();
+            AmazonRekognitionClient rekognitionClient = AmazonClient.GetInstance();
 
             DeleteFacesRequest deleteFacesRequest = new DeleteFacesRequest()
             {
@@ -78,7 +87,10 @@ namespace Kashef.Services
 
             DeleteFacesResponse deleteFacesResponse = rekognitionClient.DeleteFaces(deleteFacesRequest);
         }
+         
 
         #endregion
+
+
     }
 }

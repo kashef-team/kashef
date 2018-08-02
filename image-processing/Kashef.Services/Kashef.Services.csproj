@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AmazonClient.cs" />
     <Compile Include="Contracts\ICollectionService.cs" />
     <Compile Include="Contracts\IRekognitionService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

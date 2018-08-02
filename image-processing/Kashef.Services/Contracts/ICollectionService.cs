@@ -8,7 +8,7 @@ namespace Kashef.Services
 {
     public interface ICollectionService
     {
-        void AddCollection(string collectionId);
+        bool AddCollection(string collectionId);
 
         List<string> GetAllFacesInCollection(string collectionId);
 

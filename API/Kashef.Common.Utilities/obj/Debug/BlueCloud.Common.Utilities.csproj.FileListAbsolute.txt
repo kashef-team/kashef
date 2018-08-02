@@ -1,0 +1,8 @@
+E:\ProductCollection\POCs\BlueCloud.OneGate.Common.Utilities\obj\Debug\BlueCloud.Common.Utilities.Properties.Resources.resources
+E:\ProductCollection\POCs\BlueCloud.OneGate.Common.Utilities\obj\Debug\BlueCloud.Common.Utilities.csproj.GenerateResource.Cache
+E:\ProductCollection\POCs\Build\BlueCloud.Common.Utilities.dll.config
+E:\ProductCollection\POCs\Build\BlueCloud.Common.Utilities.dll
+E:\ProductCollection\POCs\Build\BlueCloud.Common.Utilities.pdb
+E:\ProductCollection\POCs\BlueCloud.OneGate.Common.Utilities\obj\Debug\BlueCloud.Common.Utilities.dll
+E:\ProductCollection\POCs\BlueCloud.OneGate.Common.Utilities\obj\Debug\BlueCloud.Common.Utilities.pdb
+E:\ProductCollection\POCs\BlueCloud.OneGate.Common.Utilities\obj\Debug\BlueCloud.Common.Utilities.csprojResolveAssemblyReference.cache

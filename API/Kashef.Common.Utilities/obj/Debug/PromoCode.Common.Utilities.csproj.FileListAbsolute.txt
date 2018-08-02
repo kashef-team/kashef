@@ -1,0 +1,14 @@
+C:\SourceCode\PromoCode.Common.Utilities\obj\Debug\PromoCode.Common.Utilities.Properties.Resources.resources
+C:\SourceCode\PromoCode.Common.Utilities\obj\Debug\PromoCode.Common.Utilities.csproj.GenerateResource.Cache
+C:\SourceCode\Build\PromoCode.Common.Utilities.dll.config
+C:\SourceCode\Build\PromoCode.Common.Utilities.dll
+C:\SourceCode\Build\PromoCode.Common.Utilities.pdb
+C:\SourceCode\PromoCode.Common.Utilities\obj\Debug\PromoCode.Common.Utilities.dll
+C:\SourceCode\PromoCode.Common.Utilities\obj\Debug\PromoCode.Common.Utilities.pdb
+C:\SourceCode\PromoCode\Build\PromoCode.Common.Utilities.dll.config
+C:\SourceCode\PromoCode\Build\PromoCode.Common.Utilities.dll
+C:\SourceCode\PromoCode\Build\PromoCode.Common.Utilities.pdb
+C:\SourceCode\PromoCode\PromoCode.Common.Utilities\obj\Debug\PromoCode.Common.Utilities.Properties.Resources.resources
+C:\SourceCode\PromoCode\PromoCode.Common.Utilities\obj\Debug\PromoCode.Common.Utilities.csproj.GenerateResource.Cache
+C:\SourceCode\PromoCode\PromoCode.Common.Utilities\obj\Debug\PromoCode.Common.Utilities.dll
+C:\SourceCode\PromoCode\PromoCode.Common.Utilities\obj\Debug\PromoCode.Common.Utilities.pdb

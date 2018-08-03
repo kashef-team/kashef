@@ -5,6 +5,7 @@ import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
 import HomeIcon from '@material-ui/icons/Home';
 import ReportIcon from '@material-ui/icons/Report';
+import CameraIcon from '@material-ui/icons/Camera';
 
 const styles = {
     root: {
@@ -38,9 +39,10 @@ class BottomBar extends React.Component {
                     value={value}
                     onChange={this.handleChange}
                     showLabels
-                    className={classes.root}
+                    className={classes.navigation}
                 >
                     <BottomNavigationAction label="Home" icon={<HomeIcon />} />
+                    <BottomNavigationAction label="Scan" icon={<CameraIcon />} />
                     <BottomNavigationAction label="Report" icon={<ReportIcon />} />
                 </BottomNavigation>
             </div>

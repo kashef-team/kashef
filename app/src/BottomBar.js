@@ -38,7 +38,7 @@ class BottomBar extends React.Component {
                             this.setState({ value });
                             switch(value) {
                                 case 0:
-                                    history.push('/');
+                                    history.push('/home');
                                 break;
                                 case 1:
                                     history.push('/scan');

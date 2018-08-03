@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import TopAppBar from './TopAppBar';
 import BottomBar from './BottomBar';
 import People from './People';
+import Scan from './Scan';
 
 const styles = {
   bottom: {
@@ -40,8 +41,8 @@ class Home extends Component {
           <div>
             <TopAppBar />
               <Route path="/home" render={() => <People people={this.state.people}/>} />
-              {/* <Route path="/scan" component={Scan} />
-              <Route path="/report" component={Report} /> */}
+              <Route path="/scan" component={Scan} />
+              {/* <Route path="/report" component={Report} /> */}
             <BottomBar />
           </div>
         </Router>

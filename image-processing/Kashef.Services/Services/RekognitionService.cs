@@ -39,34 +39,41 @@ namespace Kashef.Services
         /// <param name="collectionId"></param>
         /// <param name="imageId"></param>
         /// <param name="image"></param>
-        public bool AddFacesToCollection(string collectionId, Amazon.Rekognition.Model.Image image)
+        public FaceRecord AddImageToCollection(string collectionId, Amazon.Rekognition.Model.Image image)
         {
-            try
-            {
-                AmazonRekognitionClient rekognitionClient = new AmazonRekognitionClient();
+            AmazonRekognitionClient rekognitionClient = AmazonClient.GetInstance();
 
-                IndexFacesRequest indexFacesRequest = new IndexFacesRequest()
-                {
-                    Image = image,
-                    CollectionId = collectionId,
-                    DetectionAttributes = new List<String>() { "ALL" }
-                };
-
-                IndexFacesResponse indexFacesResponse = rekognitionClient.IndexFaces(indexFacesRequest);
-                return true;
-            }
-            catch(Exception ex)
+            //Validate that image contains only one face.
+            DetectFacesResponse detectFacesResponse = rekognitionClient.DetectFaces(new Amazon.Rekognition.Model.DetectFacesRequest
             {
-                Logger.LogException(ex);
-                return false;
+                Attributes = new List<string> { "ALL" },
+                Image = image
+
+            });
+
+            if (null != detectFacesResponse.FaceDetails && detectFacesResponse.FaceDetails.Count > 1)
+            {
+                throw new ArgumentNullException("Many faces in the image");
             }
+
+            IndexFacesRequest indexFacesRequest = new IndexFacesRequest()
+            {
+
+                Image = image,
+                CollectionId = collectionId,
+                DetectionAttributes = new List<String>() { "ALL" }
+            };
+
+            IndexFacesResponse indexFacesResponse = rekognitionClient.IndexFaces(indexFacesRequest);
+
+            return indexFacesResponse.FaceRecords.FirstOrDefault();
         }
          
         public List<FaceRecord> Recognize(string collectionId, Amazon.Rekognition.Model.Image image)
         {
 
             //1- Detect faces in the input image and adds them to the specified collection. 
-            AmazonRekognitionClient rekognitionClient = new AmazonRekognitionClient();
+            AmazonRekognitionClient rekognitionClient = AmazonClient.GetInstance();
 
             IndexFacesRequest indexFacesRequest = new IndexFacesRequest()
             {

@@ -32,7 +32,7 @@ class People extends Component {
                     <img src={tile.images[0].url} alt={tile.name} />
                     <GridListTileBar
                     title={tile.name}
-                    subtitle={<span>Type: {tile.type}</span>}
+                    subtitle={<span>Type: {tile.type} {tile.isMissing && <span>(Missing)</span>}</span>}
                     />
                 </GridListTile>
                 ))}

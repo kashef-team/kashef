@@ -6,18 +6,14 @@ import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
 import HomeIcon from '@material-ui/icons/Home';
 import ReportIcon from '@material-ui/icons/Report';
 import CameraIcon from '@material-ui/icons/Camera';
+import { Route } from 'react-router-dom';
 
 const styles = {
-    root: {
-        flexGrow: 1,
-    },
-    flex: {
-        flexGrow: 1,
-    },
-    menuButton: {
-        marginLeft: -12,
-        marginRight: 20,
-    },
+    bottom: {
+        position: 'fixed',
+        bottom: 0,
+        width: '100%',
+      }
 };
 
 class BottomBar extends React.Component {
@@ -34,18 +30,32 @@ class BottomBar extends React.Component {
         const { value } = this.state;
 
         return (
-            <div className={classes.root}>
-                <BottomNavigation
-                    value={value}
-                    onChange={this.handleChange}
-                    showLabels
-                    className={classes.navigation}
-                >
-                    <BottomNavigationAction label="Home" icon={<HomeIcon />} />
-                    <BottomNavigationAction label="Scan" icon={<CameraIcon />} />
-                    <BottomNavigationAction label="Report" icon={<ReportIcon />} />
-                </BottomNavigation>
-            </div>
+            <Route render={({ history}) => (
+                <div className={classes.bottom}>
+                    <BottomNavigation
+                        value={value}
+                        onChange={ (event, value) => {
+                            this.setState({ value });
+                            switch(value) {
+                                case 0:
+                                    history.push('/');
+                                break;
+                                case 1:
+                                    history.push('/scan');
+                                break;
+                                case 2:
+                                    history.push('/report');
+                                break;
+                            }
+                        }}
+                        showLabels
+                    >
+                        <BottomNavigationAction label="Home" icon={<HomeIcon />} />
+                        <BottomNavigationAction label="Scan" icon={<CameraIcon />} />
+                        <BottomNavigationAction label="Report" icon={<ReportIcon />} />
+                    </BottomNavigation>
+                </div>
+            )} />
         );
     };
 }

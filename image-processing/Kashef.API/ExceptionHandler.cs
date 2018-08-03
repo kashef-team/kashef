@@ -20,24 +20,7 @@ namespace Promotion.Service.API
             LogException(actionExecutedContext.Exception);
 
             //Handle Exception
-            //if (actionExecutedContext.Exception is PromotionEntityValidationException)
-            //{
-            //    PromotionEntityValidationException promoCodeEntityValidationException = actionExecutedContext.Exception as PromotionEntityValidationException;
-
-            //    actionExecutedContext.Response = new HttpResponseMessage()
-            //    {
-            //        Content = new StringContent(new JsonSerializer().Serialize<ErrorMessage>(new ErrorMessage(promoCodeEntityValidationException.ErrorCode))),
-            //        StatusCode = (HttpStatusCode)422
-            //    };
-            //}
-            //else
-            //{
-            //    actionExecutedContext.Response = new HttpResponseMessage()
-            //    {
-            //        Content = new StringContent(new JsonSerializer().Serialize<ErrorMessage>(new ErrorMessage(actionExecutedContext.Exception.Message))),
-            //        StatusCode = HttpStatusCode.InternalServerError
-            //    };
-            //}
+            
         }
 
         private void LogException(Exception ex)
